@@ -2,15 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Exploring Major League Baseball History",
+    "title": "Shark Attacks",
     "section": "",
-    "text": "Welcome to an exploration of Major League Baseball through the Lahman Baseball Database. Looking at home runs per team-game, rather than raw season totals, puts seasons of different lengths on a fair footing. That normalization shows that apparent dips in 1918, 1919, 1981, 1994, 1995, and 2020 reflect shortened seasons—not a sudden drop in hitting power—and brings the game’s true historical hitting eras into focus.\nThe career leaderboard offers another striking view of baseball history: Barry Bonds finished with 762 home runs, and nine of the all-time top fifteen sluggers played during the 1994–2009 era. Explore both full analyses—home runs per game by season and the career slugger charts—using the links in the top navigation bar."
+    "text": "The Global Shark Attack File (GSAF) is a long-running archive of reported shark incidents. This site explores a cleaned dataset of 5,094 incidents dating back to 1900, including where and when they occurred, the activities involved, and their outcomes.\nShark attacks attract attention, but public fear often exceeds the actual risk: most recorded incidents are non-fatal, and serious encounters are rare. The long-term rise in reports mirrors the growth of beach recreation and human exposure, rather than evidence that oceans have become more dangerous.\nUse the Map page to explore the geographic distribution of attacks by country. Trends highlights patterns over time and by ocean activity, including how fatal and non-fatal outcomes vary."
   },
   {
-    "objectID": "home-runs.html",
-    "href": "home-runs.html",
-    "title": "Home runs",
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
     "section": "",
-    "text": "yearID\ntotal_hr\ntotal_games\nhr_per_game\n\n\n\n\n1981\n1781\n2788\n0.6388092\n\n\n1994\n3306\n3200\n1.0331250\n\n\n2019\n6776\n4858\n1.3948127\n\n\n2020\n2304\n1796\n1.2828508"
+    "text": "Warning: There was 1 warning in `mutate()`.\nℹ In argument: `Country_lower = case_match(...)`.\nCaused by warning:\n! `case_match()` was deprecated in dplyr 1.2.0.\nℹ Please use `recode_values()` instead."
   }
 ]

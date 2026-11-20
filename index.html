@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploring Major League Baseball History – Baseball</title>
+<title>Shark Attacks</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-977607561cd60f84a551947bb62c3781.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8c69f6d005a5e6627934705eb737d028.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Baseball</span>
+    <span class="navbar-title">Shark Attacks</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -99,12 +99,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./home-runs.html"> 
-<span class="menu-text">Home runs</span></a>
+    <a class="nav-link" href="./map.html"> 
+<span class="menu-text">Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sluggers.html"> 
-<span class="menu-text">Sluggers</span></a>
+    <a class="nav-link" href="./trends.html"> 
+<span class="menu-text">Trends</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -117,15 +117,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exploring Major League Baseball History</h1>
+<h1 class="title">Shark Attacks</h1>
 </div>
 
 
@@ -142,8 +140,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to an exploration of Major League Baseball through the Lahman Baseball Database. Looking at home runs per team-game, rather than raw season totals, puts seasons of different lengths on a fair footing. That normalization shows that apparent dips in 1918, 1919, 1981, 1994, 1995, and 2020 reflect shortened seasons—not a sudden drop in hitting power—and brings the game’s true historical hitting eras into focus.</p>
-<p>The career leaderboard offers another striking view of baseball history: Barry Bonds finished with 762 home runs, and nine of the all-time top fifteen sluggers played during the 1994–2009 era. Explore both full analyses—home runs per game by season and the career slugger charts—using the links in the top navigation bar.</p>
+<p>The Global Shark Attack File (GSAF) is a long-running archive of reported shark incidents. This site explores a cleaned dataset of 5,094 incidents dating back to 1900, including where and when they occurred, the activities involved, and their outcomes.</p>
+<p>Shark attacks attract attention, but public fear often exceeds the actual risk: most recorded incidents are non-fatal, and serious encounters are rare. The long-term rise in reports mirrors the growth of beach recreation and human exposure, rather than evidence that oceans have become more dangerous.</p>
+<p>Use the <strong>Map</strong> page to explore the geographic distribution of attacks by country. <strong>Trends</strong> highlights patterns over time and by ocean activity, including how fatal and non-fatal outcomes vary.</p>
 
 
 
@@ -221,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/boloboloaf-hub\.github\.io\/codespace-starter\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
