@@ -7,10 +7,15 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: home-runs.qmd
+        text: Home runs
 
 format:
   html:
     theme: cosmo
     toc: true
 
+execute:
+  echo: false
 
+  

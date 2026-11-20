@@ -1,0 +1,53 @@
+---
+title: "Home runs"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(Lahman)
+```
+
+```{r}
+#| cache: true
+hr_by_season <- Teams |>
+  summarize(
+    hr_per_game = sum(HR, na.rm = TRUE) / sum(G, na.rm = TRUE),
+    .by = yearID
+  ) |>
+  mutate(
+    season_type = if_else(
+      yearID %in% c(1918, 1919, 1981, 1994, 1995, 2020),
+      "Shortened",
+      "Full"
+    )
+  )
+```
+
+```{r}
+hr_by_season |>
+  ggplot(aes(x = yearID, y = hr_per_game)) +
+  geom_line() +
+  geom_point(aes(color = season_type)) +
+  labs(
+    title = "Home Runs per Game by Season",
+    subtitle = "Shortened seasons are highlighted",
+    x = "Season",
+    y = "Home Runs per Game",
+    color = "Season Type",
+    caption = "Source: Lahman Baseball Database"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+Teams |>
+  filter(yearID %in% c(1981, 1994, 2019, 2020)) |>
+  summarize(
+    total_hr = sum(HR, na.rm = TRUE),
+    total_games = sum(G, na.rm = TRUE),
+    hr_per_game = total_hr / total_games,
+    .by = yearID
+  ) |>
+  knitr::kable()
+```
