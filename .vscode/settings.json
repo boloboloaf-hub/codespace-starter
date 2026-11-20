@@ -24,5 +24,6 @@
     ".github": true,
     ".devcontainer/tests": true,
     ".vscode": true
-  }
+  },
+  "liveServer.settings.port": 5501
 }

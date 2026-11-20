@@ -1,0 +1,60 @@
+---
+title: "Sluggers"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(Lahman)
+```
+
+```{r}
+Batting |>
+  summarize(
+    total_hr = sum(HR, na.rm = TRUE),
+    first_year = min(yearID),
+    last_year = max(yearID),
+    .by = playerID
+  ) |>
+  arrange(desc(total_hr)) |>
+  slice_head(n = 15) |>
+  left_join(People, by = "playerID") |>
+  mutate(
+    name = paste(nameFirst, nameLast),
+    steroid_era = if_else(
+      last_year >= 1994 & first_year <= 2009,
+      "Active (1994–2009)",
+      "Other Era"
+    )
+  ) |>
+  ggplot(aes(x = total_hr, y = fct_reorder(name, total_hr))) +
+  geom_col(aes(fill = steroid_era)) +
+  labs(
+    title = "Career Home Run Leaders",
+    subtitle = "Top 15 players by career home runs",
+    x = "Career Home Runs",
+    y = "Player",
+    fill = "Career Era",
+    caption = "Source: Lahman Baseball Database"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+Batting |>
+  filter(playerID == "bondsba01") |>
+  summarize(
+    hr = sum(HR, na.rm = TRUE),
+    .by = yearID
+  ) |>
+  ggplot(aes(x = yearID, y = hr)) +
+  geom_col() +
+  labs(
+    title = "Barry Bonds Home Runs by Season",
+    subtitle = "Season-level home run totals",
+    x = "Season",
+    y = "Home Runs",
+    caption = "Source: Lahman Baseball Database"
+  ) +
+  theme_minimal()
+```
