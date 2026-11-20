@@ -2,4 +2,6 @@
 title: "Exploring Major League Baseball History"
 ---
 
-Welcome to a site that explores the history of Major League Baseball through its data. Using the Lahman database, we will uncover the people, teams, and milestones that have shaped America's pastime.
+Welcome to an exploration of Major League Baseball through the Lahman Baseball Database. Looking at home runs per team-game, rather than raw season totals, puts seasons of different lengths on a fair footing. That normalization shows that apparent dips in 1918, 1919, 1981, 1994, 1995, and 2020 reflect shortened seasons—not a sudden drop in hitting power—and brings the game's true historical hitting eras into focus.
+
+The career leaderboard offers another striking view of baseball history: Barry Bonds finished with 762 home runs, and nine of the all-time top fifteen sluggers played during the 1994–2009 era. Explore both full analyses—home runs per game by season and the career slugger charts—using the links in the top navigation bar.
